@@ -6,6 +6,7 @@ alert ('The first three questions are yes or no questions. The last question ask
 
 var questionsRight = 0;
 
+/* First question. yes or no */
 var answer1 = prompt('Patrick has more board games than he has played in the past year. y/n');
 console.log('The user answered question 1: '+answer1);
 if (answer1.toLowerCase() === 'y' || answer1.toLowerCase() === 'yes') {
@@ -18,6 +19,7 @@ if (answer1.toLowerCase() === 'y' || answer1.toLowerCase() === 'yes') {
   alert('I\'m afraid you\'re wrong ' +user+'.');
 }
 
+/* Second question, yes or no */
 var answer2 = prompt('Patrick\'s favorite drink is a Bloody Mary. y/n');
 console.log('The user answered question 2: '+answer2);
 if (answer2.toLowerCase() === 'n' || answer2.toLowerCase() === 'no') {
@@ -30,6 +32,7 @@ if (answer2.toLowerCase() === 'n' || answer2.toLowerCase() === 'no') {
   alert('Good guess, ' +user+', but Patrick\'s favorite drink is a Corpse Reviver No.3. No points this time.');
 }
 
+/* Third question, yes or no */
 var answer3 = prompt('West coast best coast? y/n');
 console.log('The user answered question 3: '+answer3);
 if (answer3.toLowerCase() === 'y' || answer3.toLowerCase() === 'yes') {
@@ -42,6 +45,7 @@ if (answer3.toLowerCase() === 'y' || answer3.toLowerCase() === 'yes') {
   alert('You poor fool, ' +user+'.');
 }
 
+/* Fourth question, loops until the user guesses right, gives a hint each time */
 do {
   console.log('dowhile loop');
   var rightYet = false;
@@ -65,4 +69,5 @@ do {
   }
 } while (rightYet !== true );
 
+/* Tells the user how many questions he or she got right */
 alert('You got ' + questionsRight + ' question right ' +user+ '.');
