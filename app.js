@@ -45,7 +45,7 @@ if (answer3.toLowerCase() === 'y' || answer3.toLowerCase() === 'yes') {
 do {
   console.log('dowhile loop');
   var rightYet = false;
-  answer4 = prompt('One last question ' +user+'. What number am I thinking of? I\'ll give you a hint. It\'s between 1 and 10.');
+  var answer4 = prompt('One last question ' +user+'. What number am I thinking of? I\'ll give you a hint. It\'s between 1 and 10.');
   if (answer4 == 4) {
     console.log('just right');
     alert('DING DING DING! Got it!');
@@ -56,9 +56,12 @@ do {
     alert('Too low, try again ' +user+ '.');
     console.log('too low');
   }
-  else {
+  else if (answer4 > 4) {
     alert('Too high, try again ' +user+ '.');
     console.log('too high');
+  }
+  else {
+    alert('I\'m just a dumb computer. Please give your answer as a numeral.')
   }
 } while (rightYet !== true );
 
