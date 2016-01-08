@@ -10,3 +10,5 @@ Edited by Iris Carrera on January 7th, 2016 for Day 4's assignment
 Placed the if else questions into functions
 Transformed the alerts into paragraphs that appear once the associated question was answered
 Had fun!
+
+1/8: Dry'ed code and added CSS style (colors:red & green) Driver: Susan Navigator: Patrick
