@@ -11,7 +11,7 @@ console.log('The user\'s name is ' + user);
 alert ('My name is Patrick, ' + user + ', what do you know about me? Let\'s find out.');
 var questionsRight = 0;
 
-/* First question. yes or no */
+// First question. yes or no
 function questionOne() {
   var answer1 = prompt('Patrick has more board games than he has played in the past year. y/n');
 console.log('The user answered question 1: '+ answer1);
@@ -28,7 +28,7 @@ if (answer1.toLowerCase() === 'y' || answer1.toLowerCase() === 'yes') {
 }
 }
 
-/* Second question, yes or no */
+//Second question, yes or no
 function questionTwo(){
   var answer2 = prompt('Patrick\'s favorite drink is a Bloody Mary. y/n');
 console.log('The user answered question 2: ' + answer2);
@@ -45,7 +45,7 @@ if (answer2.toLowerCase() === 'n' || answer2.toLowerCase() === 'no') {
 }
 }
 
-/* Third question, yes or no */
+//Third question, yes or no
 function questionThree() {
   var answer3 = prompt('West coast best coast? y/n');
 console.log('The user answered question 3: '+answer3);
@@ -79,7 +79,7 @@ if (answer4 === '3') {
 }
 }
 
-/* Fifth question, loops until the user guesses right, gives a hint each time */
+// Fifth question, loops until the user guesses right, gives a hint each time
 function questionFive() {
   do {
   console.log('dowhile loop');
@@ -110,7 +110,7 @@ function questionFive() {
 }
 
 
-/* Tells the user how many questions he or she got right */
+// Tells the user how many questions he or she got right
 function numberRight(){
   res6.textContent = 'You got ' + questionsRight + ' question right ' + user + '.';
 }
